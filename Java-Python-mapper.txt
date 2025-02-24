@@ -1,0 +1,127 @@
+
+general 
+-------
+__init__(self) = class constructor
+//main function
+if __name__ = "__main__":
+  logic
+//
+__private_member = private 
+public_member = public
+ClassName() - will create object 
+ClassName().methodName() - call a function of object
+import collections for using Dictionaries, list 
+type(var) - gives type 
+str(var) - typecasts to string
+//function
+def funcname(self, <anydata>):
+  logic
+  return anything
+//
+ip = input("Enter anydatatype")
+ip.split(' ')
+print("His name is {}".format(string))
+
+boolean to 
+not False
+var is None 
+var == None
+
+exceptions
+----------
+try:
+expect ZeroDivisionError as err:
+else:
+finally:
+
+raise NameError - to raise a exception 
+
+data types
+----------
+str, float, int
+
+string
+------
+str = "sting"
+str[0], str[1:2], str[-3:-2]
+len = len(str) vs str.length in java 
+can only concatenate str (not "int"/"float") to str
+
+number
+------
+/ - float division
+// - integer division 
+% - remainder
+pow(2,2) vs Math.pow()
+round(float_number,2)
+
+collections
+-----------
+add in java = append in python except for set where its add only 
+remove in java = remove in array, del in dictionary, popleft in deque, pop in stack 
+
+Lists
+-----
+arr = []
+
+for i in arr:
+
+for i in range(len(arr)):
+
+arr.append()
+arr.remove(ele)
+arr.sort() : sort in asc IN PLACE for desc use reverse = True
+arr.reverse()
+
+tuples are immutable lists
+tuple1 = (1,2,4)
+
+sets 
+----
+my_set = set()
+my_set.add(value)
+or 
+my_set = {"Paul", "Jason"}
+
+if "Paul" in my_set: # membership operator in 
+
+sorted(my_set)
+
+queue, stack 
+------------
+q = deque()
+q.append(val)
+q.popleft()
+q.pop() will pop on the right
+
+stack is using an array
+stack = [] 
+stack.append(val)
+stack.pop
+
+Dictionaries
+------------
+hm = {} : HashMap
+hm[key] = value
+or 
+hm = {key1(integer): value1, key2(string) : value2}
+del hm[key1]
+key can be a integer or string in the same thing
+list(hm) - will generate a list of keys 
+sorted(hm) - sorting 
+hm.keys() - list of keys 
+hm.get(key)
+for k,v in hm.items():
+  print(k + "," + v)
+for k in hm.keys():
+for v in hm.values():
+default_dict = collections.defaultdict(int) - generates dict with default values as 0
+
+priority queue or heap 
+----------------------
+import heapq
+heapq.heapify(list) = gives min heap
+heapq.heappush(list, 2)
+min_ele = heapq.heappop(list)
+nlarg = heapq.nlargest(3, list)
+nsmall = heapq.nsmallest(3, list)
